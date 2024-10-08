@@ -1,0 +1,40 @@
+{
+    "apiVersion": 3,
+    "name": "plugin-blocks/block-2",
+    "title": "Block 2",
+    "category": "common",
+    "icon": "format-image",
+    "attributes": {
+        "mediaID": {
+            "type": "number"
+        },
+        "mediaSRC": {
+            "type": "string",
+            "source": "attribute",
+            "selector": "img.offer-image",
+            "attribute": "src"
+        },
+        "alt": {
+            "type": "string",
+            "source": "attribute",
+            "selector": "img.offer-image",
+            "attribute": "alt"
+        },
+        "title": {
+            "type": "string",
+            "source": "html",
+            "selector": "h3.offer-title"
+        },
+        "desc": {
+            "type": "string",
+            "source": "html",
+            "selector": "p.offer-desc"
+        }
+    },
+    "supports": {
+        "html": false
+    },
+    "editorScript": "file:./index.js",
+    "style": "file:./style.css",
+    "editorStyle": "file:./editor.css"
+}

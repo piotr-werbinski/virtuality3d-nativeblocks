@@ -1,0 +1,32 @@
+.wp-block-plugin-blocks-block-5 {
+    background: #ffffff;
+    color: #000000;
+    padding: 20px;
+	transition-property: all;
+    transition-duration: 0.5s;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid #00000080;
+    border-radius: 12px;
+}
+
+textarea, input {
+    border-bottom: 1px solid #8c8f94!important;
+    border-top: 0!important;
+    border-left: 0!important;
+    border-right: 0!important;
+    border-radius: 0!important;
+}
+
+textarea:focus, input:focus{
+    outline: none!important;
+    box-shadow: none!important;
+}
+
+.wp-block-plugin-blocks-block-5 input {
+    flex: 100%;
+    width: 100%;
+}

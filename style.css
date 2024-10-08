@@ -1,0 +1,407 @@
+/*
+Theme Name: Virtuality
+Text Domain: Website template Virtuality
+Version: 1.0
+Description: WordPress website template Virtuality
+Author: Piotr Werbinski
+screenshot.png
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+html, body {
+    margin: 0;
+    position: relative;
+}
+
+.container__model {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 0;
+}
+
+.container__model-header {
+    position: absolute;
+    top: clamp(2.25rem, -2.3333rem + 6.1111vw, 5rem);
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    opacity: 1;
+      transition: opacity 0.3s;
+}
+
+.container__model-header div {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transform: scale(1);
+    animation: pulse 1.5s infinite;
+}
+
+.container__model-header h1 {
+    font-size: clamp(2rem, 1.7451rem + 1.0458vw, 3rem);
+    line-height: normal;
+}
+
+.container__model-header div p {
+    font-size: clamp(0.75rem, 0.7181rem + 0.1307vw, 0.875rem);
+    line-height: normal;
+}
+
+.container__model-header div svg {
+    width: 42px;
+    height: 42px;
+    display: block;
+    margin: auto;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.9);
+    }
+
+    70% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+.container__model-header h1, .container__model-header div p {
+    font-family: "Bruno Ace SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: auto;
+    text-align: center;
+}
+
+#container-3d {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.virtuality {
+    position: relative;
+    z-index: 1;
+}
+
+.virtuality__parallax {
+    width: 100%;
+    height: 100vh;
+}
+
+.virtuality__content {
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0px -47px 38px 9px rgba(0,0,0,0.9),
+                0px 47px 38px 9px rgba(0,0,0,0.9);
+}
+
+.virtuality__content-pros {
+    margin: 0px clamp(0.75rem, -0.0784rem + 3.3987vw, 4rem);
+    padding: clamp(3rem, 1.7255rem + 5.2288vw, 8rem) 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: clamp(0.75rem, 0.5588rem + 0.7843vw, 1.5rem);
+}
+
+.virtuality__content-pros div {
+    flex: 1 1 303px;
+    border-radius: clamp(0.5rem, 0.3725rem + 0.5229vw, 1rem);
+    background: linear-gradient(100deg, rgba(73, 73, 73, 1) 0%, rgba(24, 23, 23, 0.9) 100%);
+    padding: clamp(1rem, 0.4902rem + 2.0915vw, 3rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: clamp(1rem, 0.8725rem + 0.5229vw, 1.5rem);
+}
+
+.pros {
+    align-items: center;
+}
+
+.virtuality__content-pros div img {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.virtuality__content-pros div h2 {
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: clamp(1.5rem, 1.1176rem + 1.5686vw, 3rem);
+    font-style: normal;
+    line-height: normal;
+    margin: 0;
+    text-align: left;
+    color: #ffffff;
+}
+
+.virtuality__content-pros div p {
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: clamp(1rem, 0.8407rem + 0.6536vw, 1.625rem);
+    font-style: normal;
+    line-height: normal;
+    margin: 0;
+    text-align: left;
+    color: #ffffff;
+}
+
+.virtuality__content-offer {
+    margin: 0px clamp(0.75rem, -0.0784rem + 3.3987vw, 4rem);
+    padding: clamp(3rem, 1.7255rem + 5.2288vw, 8rem) 0px clamp(0.75rem, 0.5588rem + 0.7843vw, 1.5rem) 0px;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.75rem, 0.5588rem + 0.7843vw, 1.5rem);
+}
+
+.virtuality__content-offer h2 {
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: clamp(1.5rem, 1.1176rem + 1.5686vw, 3rem);
+    font-style: normal;
+    line-height: normal;
+    margin: 0;
+    text-align: left;
+    color: #ffffff;
+}
+
+.offer__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: clamp(0.75rem, 0.5588rem + 0.7843vw, 1.5rem);
+}
+
+.offer__container div {
+    border-radius: clamp(0.5rem, 0.3725rem + 0.5229vw, 1rem);
+    background: linear-gradient(100deg, rgba(73, 73, 73, 1) 0%, rgba(24, 23, 23, 0.9) 100%);
+    padding: clamp(1rem, 0.7451rem + 1.0458vw, 2rem);
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 260px;
+    gap: clamp(0.75rem, 0.5588rem + 0.7843vw, 1.5rem);
+}
+
+.offer__container div h3 {
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: clamp(1.5rem, 1.3725rem + 0.5229vw, 2rem);
+    font-style: normal;
+    line-height: normal;
+    margin: 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.offer__container div p {
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: clamp(1rem, 0.8407rem + 0.6536vw, 1.625rem);
+    font-style: normal;
+    line-height: normal;
+    margin: 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.offer__container div img {
+    max-width: 48px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.virtuality__content-about {
+    margin: 0px clamp(0.75rem, -0.0784rem + 3.3987vw, 4rem);
+    padding: 0px 0px clamp(3rem, 1.7255rem + 5.2288vw, 8rem) 0px;
+}
+
+.virtuality__content-about div {
+    border-radius: clamp(0.5rem, 0.3725rem + 0.5229vw, 1rem);
+    background: linear-gradient(100deg, rgba(73, 73, 73, 1) 0%, rgba(24, 23, 23, 0.9) 100%);
+    padding: clamp(1rem, 0.4902rem + 2.0915vw, 3rem);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1rem, 0.8725rem + 0.5229vw, 1.5rem);
+}
+
+.virtuality__content-about div h2 {
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: clamp(1.5rem, 1.1176rem + 1.5686vw, 3rem);
+    font-style: normal;
+    line-height: normal;
+    margin: 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.virtuality__content-about div p {
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: clamp(1rem, 0.8407rem + 0.6536vw, 1.625rem);
+    font-style: normal;
+    line-height: normal;
+    margin: 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.virtuality__content-contacthead {
+    margin: 0px clamp(0.75rem, -0.0784rem + 3.3987vw, 4rem);
+    padding: clamp(3rem, 1.7255rem + 5.2288vw, 8rem) 0px clamp(0.75rem, 0.5588rem + 0.7843vw, 1.5rem) 0px;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.75rem, 0.5588rem + 0.7843vw, 1.5rem);
+}
+
+.virtuality__content-contacthead div {
+    border-radius: clamp(0.5rem, 0.3725rem + 0.5229vw, 1rem);
+    background: linear-gradient(100deg, rgba(73, 73, 73, 1) 0%, rgba(24, 23, 23, 0.9) 100%);
+    padding: clamp(1rem, 0.4902rem + 2.0915vw, 3rem);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1rem, 0.8725rem + 0.5229vw, 1.5rem);
+}
+
+.virtuality__content-contacthead h2 {
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: clamp(1.5rem, 1.1176rem + 1.5686vw, 3rem);
+    font-style: normal;
+    line-height: normal;
+    margin: 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.virtuality__content-contacthead p {
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: clamp(1rem, 0.8407rem + 0.6536vw, 1.625rem);
+    font-style: normal;
+    line-height: normal;
+    margin: 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.virtuality__content-contact {
+    margin: 0px clamp(0.75rem, -0.0784rem + 3.3987vw, 4rem);
+    padding: 0px 0px clamp(3rem, 1.7255rem + 5.2288vw, 8rem) 0px;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.75rem, 0.5588rem + 0.7843vw, 1.5rem);
+}
+
+.virtuality__content-contact form {
+    border-radius: clamp(0.5rem, 0.3725rem + 0.5229vw, 1rem);
+    background: linear-gradient(100deg, rgba(73, 73, 73, 1) 0%, rgba(24, 23, 23, 0.9) 100%);
+    padding: clamp(1rem, 0.4902rem + 2.0915vw, 3rem);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: clamp(1rem, 0.8725rem + 0.5229vw, 1.5rem);
+}
+
+.virtuality__content-contact form input {
+    flex: 1 1 300px;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: clamp(1rem, 0.8407rem + 0.6536vw, 1.625rem);
+    font-style: normal;
+    line-height: normal;
+    margin: 0;
+    text-align: center;
+    padding: 12px;
+    color: #ffffff;
+    background: none;
+    outline: 0;
+    border: 1px solid #00000075;
+    border-radius: 8px;
+}
+
+.virtuality__content-contact form textarea {
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: clamp(1rem, 0.8407rem + 0.6536vw, 1.625rem);
+    font-style: normal;
+    line-height: normal;
+    margin: 0;
+    text-align: center;
+    padding: 12px;
+    color: #ffffff;
+    background: none;
+    outline: 0;
+    border: 1px solid #00000075;
+    border-radius: 8px;
+}
+
+.virtuality__content-contact form button {
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: clamp(1rem, 0.8407rem + 0.6536vw, 1.625rem);
+    font-style: normal;
+    line-height: normal;
+    margin: 0;
+    text-align: center;
+    padding: 12px;
+    color: #ffffff;
+    background: #000000;
+    cursor: pointer;
+    outline: 0;
+    border: 1px solid #000000;
+    border-radius: 8px;
+}
+
+.virtuality__content-contact form textarea, .virtuality__content-contact form button {
+    flex: 1 1 100%;
+}
+
+::placeholder {
+    color: #ffffffc0;
+    opacity: 1;
+}
+
+::-ms-input-placeholder {
+    color: #ffffffc0;
+}
+
+@media screen and (max-width: 1200px) {
+    .container__model-header {
+        position: absolute;
+        top: 12vh;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .virtuality__content-pros div h2, .virtuality__content-pros div p, .virtuality__content-offer h2 {
+        text-align: center!important;
+    }
+}
